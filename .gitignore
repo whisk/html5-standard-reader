@@ -31,5 +31,8 @@ go.work.sum
 # .idea/
 # .vscode/
 
+# the binary file
+html5-standard-reader
+
 # HTML5 standard files
 *.html

@@ -15,7 +15,7 @@ go build -o html5-standard-reader
 ## Usage
 
 ```bash
-./html5-standard-reader <path/to/HTML Standard.html>
+./html5-standard-reader [-debug] <path/to/HTML Standard.html>
 ```
 
 ### Example

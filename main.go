@@ -6,6 +6,7 @@ import (
 	"io"
 	"log"
 	"os"
+	"path/filepath"
 	"regexp"
 	"sort"
 	"strings"
@@ -29,7 +30,8 @@ func main() {
 	flag.Parse()
 
 	if showHelp || len(flag.Args()) == 0 || len(flag.Args()) > 1 {
-		fmt.Println("Usage:\n\thtml5-standard-reader [-debug] <path/to/HTML Standard.html>")
+		progName := filepath.Base(os.Args[0])
+		fmt.Println("Usage:\n\t" + progName + " [-debug] <path/to/HTML Standard.html>")
 		fmt.Println("Reads the HTML 5 Standard file and prints found HTML elements.")
 		os.Exit(0)
 	}
